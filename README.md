@@ -53,4 +53,5 @@ This project is licensed under the Apache License - see the [LICENSE.md](LICENSE
 ## References
 
 [1]. Waiting for proceedings. 
+
 [2]. Peros, Stefanos & Stéphane, Delbruel & Michiels, Sam & Joosen, Wouter & Hughes, Danny. (2019). Khronos: Middleware for Simplified Time Management in CPS. 127-138. 10.1145/3328905.3329507. 
