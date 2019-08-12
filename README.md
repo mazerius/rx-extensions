@@ -1,6 +1,6 @@
-# Extensions that integrate RxJS with the time management functionality of Khronos (https://github.com/mazerius/khronos)
+# Extensions that integrate RxJS with the time management functionality of Khronos (https://github.com/mazerius/khronos).
 
-This project is the software implementation of the reactive extensions proposed in [1]. 
+This project is the software implementation of the reactive extensions proposed in [1], which build on top op the RxJS implementation of ReactiveX (https://github.com/ReactiveX/rxjs).
 These extensions remove the need for static signal timeout specification at compile time, thus simplifying time management and facilitating the development of CPS applications. 
 More concretely, the proposed extensions utilize Khronos [2] to provide developers with language support to precisely trade off timeliness versus completeness of the data produced by the underlying CPS infrastructure in their reactive programs.
 
@@ -39,15 +39,7 @@ Node.js
 
 ## Deployment
 
-GatewayManager is currently the only component that can be deployed on a different device than the rest of the middleware. 
-
-Make sure to configure gm_config.json, general_config.json correctly by assigning the IP address and port of the device(s) involved in the deployment. 
-
-In these configuration files there are three devices: gateway, gateway_manager and khronos. 
-
-The template assumes that gateway_manager and khronos run on the same device. If not, reconfigure the .json files with the corresponding IP address and port number of each device.
-
-The implementation assumes a gateway that provides a websocket that forwards all incoming sensor data from the CPS network. 
+Make sure to properly configure config.js, located in ~/rx-extensions/cjs/src/internal/time-mgmt, with the correct IP address and PORT numbers of Khronos.
 
 
 ## Authors
@@ -56,12 +48,9 @@ The implementation assumes a gateway that provides a websocket that forwards all
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the Apache License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## References
 
 [1]. Waiting for proceedings. 
-
-## Data Sets
-The data sets used for the evaluation of Khronos, discussed in [1], can be downloaded from: https://ufile.io/g3tvehcw
-# rx-extensions
+[2]. Peros, Stefanos & Stéphane, Delbruel & Michiels, Sam & Joosen, Wouter & Hughes, Danny. (2019). Khronos: Middleware for Simplified Time Management in CPS. 127-138. 10.1145/3328905.3329507. 
